@@ -1,1 +1,0 @@
-#Pengelompokkan endpoint api
