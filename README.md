@@ -9,8 +9,8 @@ Feel free 2 make Issue atau Pull Request!
 ## Relasi Database
 
 ```text
-Specialty (1) ---- (*) Doctor
-Doctor    (1) ---- (*) Appointment (*) ---- (1) Patient
+Specialty (1) ---- (N) Doctor
+Doctor    (1) ---- (N) Appointment (N) ---- (1) Patient
 Appointment (1) -- (1) Prescription
 ```
 
