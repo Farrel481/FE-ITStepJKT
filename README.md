@@ -16,8 +16,15 @@ Appointment (1) -- (1) Prescription
 
 ## Preparation
 
-1. Buat database PostgreSQL bernama `hospital_api`.
-2. Buat virtual environment dan instal dependency:
+1. Clone repository terlebih dahulu:
+
+```powershell
+git clone URL_REPOSITORY
+cd NAMA_FOLDER_REPOSITORY
+```
+
+2. Buat database PostgreSQL bernama `hospital_api`.
+3. Buat virtual environment dan instal dependency:
 
 ```powershell
 python -m venv .venv
@@ -25,13 +32,13 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-3. Salin `.env.example` menjadi `.env`, lalu isi password PostgreSQL sendiri:
+4. Salin `.env.example` menjadi `.env`, lalu isi password PostgreSQL sendiri:
 
 ```env
 DATABASE_URL=postgresql+psycopg://postgres:isi-dgn-password@localhost:5432/hospital_api
 ```
 
-4. Jalankan aplikasi:
+5. Jalankan aplikasi:
 
 ```powershell
 .\.venv\Scripts\uvicorn.exe app.main:app --reload
